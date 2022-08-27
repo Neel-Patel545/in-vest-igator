@@ -1,0 +1,41 @@
+/* -| FONT FAMILIES |-*/
+@font-face {
+    font-family: "Oswald";
+    src: url("../assets/font-families/Oswald/Oswald-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Oswald-ExtraLight";
+    src: url("../assets/font-families/Oswald/static/Oswald-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../assets/font-families/Lato/Lato-Black.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Light";
+    src: url("../assets/font-families/Lato/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: "Lato-BoldItalic";
+    src: url("../assets/font-families/Lato/Lato-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("../assets/font-families/Comfortaa/Comfortaa-VariableFont_wght.ttf");
+}
+
+/* ========================================================================== */
+
+span.bold { 
+    font-family: "Lato-BoldItalic";
+}
+
+/* ========================================================================== */
+                        /*  NAME: Jude Thaddeau Data
+            GITHUB: Zero-Luminance (https://github.com/Zero-Luminance)  */
+/* ========================================================================== */

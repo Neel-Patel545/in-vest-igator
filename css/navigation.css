@@ -1,0 +1,239 @@
+
+/* -| DEFAULT STYLES: STRUCTURE |- */
+body, html {
+    /* Allows child containers to span the full width of the viewport */
+    block-size: 100%;
+    inline-size: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header {
+    z-index: 1;
+}
+
+.header a, .footer a {
+    text-decoration: none;
+    color: #D8C89E;
+}
+
+.box {
+    inline-size: 100%;
+    block-size: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.box .content {
+    flex: 1 1 auto;
+}
+
+.box .footer {
+    flex: 0 1 100px;
+}
+
+/* ========================================================================== */
+
+/* NOTE: repsonsive navigation uses code from
+https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/
+   
+   The nav bar was adjusted to fit font family, & decorated using hover 
+   techniques to indicate user intraction. */
+
+/* -| NAV CONTAINER |- */
+.header {
+    background-color: #1f1f1f;
+    position: sticky;
+    top: 0;
+    inline-size: 100%;
+}
+
+.header .nav ul[class="menu"] {
+    list-style: none;
+}
+
+.header .nav ul[class="menu"] a {
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: #FBFAF2;
+    font-size: x-large;
+}
+
+/* -| NAV ICON |- */
+.logo {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.logo img {
+    block-size: 80px;
+    inline-size: 80px;
+}
+
+/* -| NAV WEB LINKS |- */
+.nav {
+    block-size: 37%;
+    inline-size: 100%;
+    position: fixed;
+    background-color: #1f1f1f;
+    overflow: hidden;
+    margin-right: 20px;
+    overflow-y: auto;
+}
+
+.menu a{
+    display: block;
+    padding-block: 10px;
+    padding-inline: 30px;
+    color: "Oswald";
+    border-left: #131313 solid;
+}
+
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+/* -| HAMBURGER MENU ICON |- */
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}/* Style label tag */
+
+.hamb-line {
+    background: #FBFAF2;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+    background: #FBFAF2;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 5px;
+}
+.hamb-line::after{
+    top: -5px;
+}
+
+.side-menu {
+    display: none;
+} /* Hide checkbox */
+
+/* -| TOGGLE MENU |- */
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+/* RESPONSIVE DESIGN */
+@media (min-width: 730px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+    }
+    .menu li{
+        float: left;
+    }
+    /* Only hover over devices using mouses */
+    @media (hover:hover) {
+        .menu a:hover{
+            background-color: transparent;
+            color: #131313;
+        }
+    }
+
+    .hamb{
+        display: none;
+    }
+}
+
+/* ========================================================================== */
+
+/* DOCUMENT FOOTER */
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    inline-size: 100%;
+    color: #FBFAF2;
+    font-family: "Oswald";
+    font-size: large;
+    background-color: #1f1f1f;   
+}
+
+.footer p {
+    flex: 7;
+    margin-inline: 20px;
+    text-align: center;
+}
+
+.footer .social-media {
+    flex: 1;
+    display: inherit;
+    justify-content: space-around;
+    margin-inline: 20px;
+}
+
+.footer .social-media a img {
+    inline-size: 60px;
+    block-size: 60px;
+    margin-inline: 10px;
+}
+
+/* ========================================================================== */
+
+/* Only hover over devices using mouses */
+@media (hover:hover) {
+
+    .header .nav ul[class="menu"] a:hover {
+        color: #D8C89E;
+    }
+
+    .logo img:hover {
+        content: url("../assets/in-vest-igator-colour.png");
+    }
+
+    .menu a:hover{
+        background-color: gray;
+    }
+
+    .footer p a:hover {
+        border-radius: 5px;
+        background-color: gray;
+    }
+
+    .footer .social-media .twitter img:hover {
+        content: url("../assets/media-icons/twitter-logo-clicked.svg");
+    }
+}
+
+/* ========================================================================== */
+                        /*  NAME: Jude Thaddeau Data
+            GITHUB: Zero-Luminance (https://github.com/Zero-Luminance)  */
+/* ========================================================================== */

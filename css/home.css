@@ -1,0 +1,104 @@
+
+/* -| HERO IMAGE & HOMEPAGE INTRODUCTION |- */
+.content {
+    min-block-size: 50%;
+    background-image: url("../assets/home-about-credits-images/home-hero-image-v1.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: auto;
+}
+
+.introduction {
+    margin: 30px;
+    border-radius: 25px;
+    opacity: 0.8;
+    background: linear-gradient(#C0C0C0, #FBFAF2);
+    text-align: center;
+}
+
+.introduction h1 { 
+    margin-inline: 10px;
+    margin-block: 20px;
+    padding: 10px;
+    font-size: 10vmin;
+    font-family: "Oswald-ExtraLight";
+    color: #0090FF;
+    letter-spacing: 8px;
+    border-bottom: 2px #2B4562 solid;
+}
+
+.introduction h2 {
+    font-size: 5vmin;
+    font-family: "Lato-Light";
+    margin-inline: 30px;
+}
+
+/* ========================================================================== */
+
+/* -| FEATURED CONTENT |- */
+.featured {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(#6e742b, #FBFAF2);
+}
+
+.container {
+    flex: 1 400px;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #C0C0C0;
+    border-bottom: 5px #131313 solid;
+}
+
+.container a {
+    text-decoration: none;
+    text-align: center;
+    color: #131313;
+}
+
+.container a h2 {
+    padding-bottom: 10px;
+    font-family: "Lato";
+    border-bottom: #FBFAF2 solid;
+    color: #2B4562;
+}
+
+.container a p {
+    font-family: "Comfortaa";
+    color: #131313;
+}
+
+/* ========================================================================== */
+
+/* -| RESPONSIVE DESIGN |- */
+
+/* Phones & Tablets */
+@media (max-width: 768px) {
+    .content{
+        background-image: url("../assets/home-about-credits-images/home-hero-image-v2.jpg");
+        justify-content: center;
+    }
+    .featured {
+        background: linear-gradient(#08171a, #FBFAF2);
+    }
+}
+
+/* Only hover over devices using mouses */
+@media (hover:hover) {
+    .container:hover {
+        background-color: #D8C89E;
+        border: none;
+    }
+}
+
+/* ========================================================================== */
+                        /*  NAME: Jude Thaddeau Data
+            GITHUB: Zero-Luminance (https://github.com/Zero-Luminance)  */
+/* ========================================================================== */
