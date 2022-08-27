@@ -55,7 +55,7 @@ https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/
 
 .header .nav ul[class="menu"] a {
     font-family: "Be Vietnam Pro", sans-serif;
-    color: #FBFAF2;
+    color: #4AF626;
     font-size: x-large;
 }
 
@@ -102,7 +102,7 @@ https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/
 }/* Style label tag */
 
 .hamb-line {
-    background: #FBFAF2;
+    background: #4AF626;
     display: block;
     height: 2px;
     position: relative;
@@ -112,7 +112,7 @@ https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/
 
 .hamb-line::before,
 .hamb-line::after{
-    background: #FBFAF2;
+    background: #4AF626;
     content: '';
     display: block;
     height: 100%;
@@ -181,8 +181,8 @@ https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/
     align-items: center;
     justify-content: space-around;
     inline-size: 100%;
-    color: #FBFAF2;
-    font-family: "Oswald";
+    color: #4AF626;
+    font-family: "Be Vietnam Pro", sans-serif;
     font-size: large;
     background-color: #1f1f1f;   
 }
@@ -216,7 +216,7 @@ https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/
     }
 
     .logo img:hover {
-        content: url("../assets/in-vest-igator-colour.png");
+        content: url("../assets/in-vest-igator.png");
     }
 
     .menu a:hover{
@@ -232,8 +232,3 @@ https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/
         content: url("../assets/media-icons/twitter-logo-clicked.svg");
     }
 }
-
-/* ========================================================================== */
-                        /*  NAME: Jude Thaddeau Data
-            GITHUB: Zero-Luminance (https://github.com/Zero-Luminance)  */
-/* ========================================================================== */
