@@ -193,19 +193,6 @@ https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/
     text-align: center;
 }
 
-.footer .social-media {
-    flex: 1;
-    display: inherit;
-    justify-content: space-around;
-    margin-inline: 20px;
-}
-
-.footer .social-media a img {
-    inline-size: 60px;
-    block-size: 60px;
-    margin-inline: 10px;
-}
-
 /* ========================================================================== */
 
 /* Only hover over devices using mouses */
@@ -226,9 +213,5 @@ https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/
     .footer p a:hover {
         border-radius: 5px;
         background-color: gray;
-    }
-
-    .footer .social-media .twitter img:hover {
-        content: url("../assets/media-icons/twitter-logo-clicked.svg");
     }
 }
